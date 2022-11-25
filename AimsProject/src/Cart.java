@@ -33,7 +33,7 @@ public class Cart {
 					addDigitalVideoDisc(dvd2);
 			}
 		}
-	}
+	
 	
 	public static float totalCost() {
 		float sum=0;
