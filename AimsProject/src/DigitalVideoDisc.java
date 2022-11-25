@@ -45,5 +45,8 @@ public class DigitalVideoDisc {
 		this.length = length;
 		this.cost = cost;
 	}
-	
+	public String toString() {
+		return  "DigitalVideoDisc [title=" + title + ", category=" + category + ", director=" + director + ", length="
+				+ length + ", cost=" + cost + "]";
+	}
 }

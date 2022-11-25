@@ -37,4 +37,30 @@ public class Cart {
 		qtyOrdered--;
 		}
 	}
-}
+	public void displayCart() {
+		for (int i = 0; i < qtyOrdered; i++) {
+			System.out.println(itemsOrdered[i].toString());
+		}
+	}
+	
+	public void print() {
+		System.out.println("**********************CART**********************");
+		System.out.println("Ordered Items:");
+		for (int i = 0; i < qtyOrdered; i++) {
+			System.out.print(i+1 +".");
+			System.out.println(itemsOrdered[i].toString());
+		}	
+		System.out.println("*************************************************");
+	}
+	public void addDigitalVideoDisc(DigitalVideoDisc dvd1,DigitalVideoDisc dvd2,DigitalVideoDisc dvd3){
+		if(qtyOrdered + 3> MAX_NUMBERS_ORDERED) {
+			System.out.println("Your cart is fulled");
+		}else {
+					addDigitalVideoDisc(dvd1);
+					addDigitalVideoDisc(dvd2);
+					addDigitalVideoDisc(dvd3);
+			}
+		}
+	}
+	
+
