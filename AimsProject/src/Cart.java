@@ -16,6 +16,25 @@ public class Cart {
 		}
 	}
 	
+	public static void addDigitalVideoDisc(DigitalVideoDisc [] dvdList) {
+		if(qtyOrdered + dvdList.length> MAX_NUMBERS_ORDERED) {
+			System.out.println("Your cart is fulled");
+		}else {
+			for (int i=0;i<dvdList.length;i++) {
+				addDigitalVideoDisc(dvdList[i]);
+			}
+		}
+	}
+	public static void addDigitalVideoDisc(DigitalVideoDisc dvd1,DigitalVideoDisc dvd2){
+		if(qtyOrdered + 2> MAX_NUMBERS_ORDERED) {
+			System.out.println("Your cart is fulled");
+		}else {
+					addDigitalVideoDisc(dvd1);
+					addDigitalVideoDisc(dvd2);
+			}
+		}
+	}
+	
 	public static float totalCost() {
 		float sum=0;
 		for(int i=0;i<qtyOrdered;i++) {
