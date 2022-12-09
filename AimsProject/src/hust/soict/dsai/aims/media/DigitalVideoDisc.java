@@ -3,10 +3,6 @@ public class DigitalVideoDisc extends Media  {
 	private String director;
 	private int length;
 	private static int nbDigitalVideoDisc=0;
-	
-
-	
-	
 	public String getDirector() {
 		return director;
 	}
@@ -16,12 +12,12 @@ public class DigitalVideoDisc extends Media  {
 
 	public DigitalVideoDisc(String title) {
 		super(title);
-		this.setID(nbDigitalVideoDisc);
+		setId(nbDigitalVideoDisc);
 		nbDigitalVideoDisc++;
 	}
 	public DigitalVideoDisc(int id, String title, String category, float cost) {
 		super(id,title,category,cost);
-		this.setID(nbDigitalVideoDisc);
+		this.setId(nbDigitalVideoDisc);
 		nbDigitalVideoDisc++;
 	}
 	public DigitalVideoDisc(int id,String title, String category, String director, float cost) {
@@ -30,7 +26,7 @@ public class DigitalVideoDisc extends Media  {
 		
 		this.director = director;
 		
-		this.setID(nbDigitalVideoDisc);
+		this.setId(nbDigitalVideoDisc);
 		nbDigitalVideoDisc++;
 	}
 	public DigitalVideoDisc(int id,String title, String category, String director, int length, float cost) {
@@ -39,7 +35,7 @@ public class DigitalVideoDisc extends Media  {
 		this.director = director;
 		this.length = length;
 		
-		this.setID(nbDigitalVideoDisc);
+		this.setId(nbDigitalVideoDisc);
 		nbDigitalVideoDisc++;
 	}
 	
